@@ -325,9 +325,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Role'
-            text/plain; charset=utf-8:
-              schema:
-                $ref: '#/components/schemas/Role'
         '404':
           description: Not found
         '500':
@@ -793,9 +790,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Course'
-            text/plain; charset=utf-8:
-              schema:
-                $ref: '#/components/schemas/Course'
         '404':
           description: Not found
           content:
@@ -860,16 +854,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Success'
-            text/plain; charset=utf-8:
-              schema:
-                $ref: '#/components/schemas/Success'
         '500':
           description: Error.
           content:
             application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorMessage'
-            text/plain; charset=utf-8:
               schema:
                 $ref: '#/components/schemas/ErrorMessage'
   '/duplicatecourse/{id}':
@@ -892,9 +880,6 @@ paths:
           description: An object containing the new course id and success status
           content:
             application/json:
-              schema:
-                $ref: '#/components/schemas/DuplicateCourse'
-            text/plain; charset=utf-8:
               schema:
                 $ref: '#/components/schemas/DuplicateCourse'
         '500':
