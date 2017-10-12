@@ -1533,9 +1533,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/PluginSingle'
         '404':
-          description: Error.
-          content:
-            application/html:
+          description: Not found. Returns HTML.
     put:
       tags:
         - plugins
@@ -1566,9 +1564,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Success'
         '404':
-          description: Error.
-          content:
-            application/html:
+          description: Not found. Returns HTML.
       requestBody:
         content:
           application/json:
